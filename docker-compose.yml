@@ -1,0 +1,44 @@
+version: '3'
+
+services:
+    rabbitmq:
+        image: rabbitmq:3.7.6-management
+        environment:
+            RABBITMQ_DEFAULT_USER: admin
+            RABBITMQ_DEFAULT_PASS: admin
+        ports:
+            - 15672:15672
+            - 5672:5672
+    redis_frontend_doctor:
+        image: redis:5.0.8
+        command: redis-server --appendonly yes
+        ports:
+            - 6380:6379
+    redis_frontend_labor:
+        image: redis:5.0.8
+        command: redis-server --appendonly yes
+        ports:
+            - 6381:6379
+    redis_frontend_status:
+        image: redis:5.0.8
+        command: redis-server --appendonly yes
+        ports:
+            - 6382:6379
+    redis_number_service:
+        image: redis:5.0.8
+        command: redis-server --appendonly yes
+        ports:
+            - 6383:6379
+    redis_service_status:
+        image: redis:5.0.8
+        command: redis-server --appendonly yes
+        ports:
+            - 6384:6379
+    db_service_status:
+        image: mysql:5.7
+        environment:
+            MYSQL_ROOT_PASSWORD: pass123
+            MYSQL_USER: superBabo
+            MYSQL_PASSWORD: babo123
+        ports:
+            - 3336:3306
