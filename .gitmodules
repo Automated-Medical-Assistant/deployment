@@ -1,0 +1,18 @@
+[submodule "microservice-frontend-doctor-testcentrum"]
+	path = microservice-frontend-doctor-testcentrum
+	url = https://github.com/Automated-Medical-Assistant/microservice-frontend-doctor-testcentrum.git
+[submodule "microservice-frontend-labor"]
+	path = microservice-frontend-labor
+	url = https://github.com/Automated-Medical-Assistant/microservice-frontend-labor.git
+[submodule "microservice-frontend-status"]
+	path = microservice-frontend-status
+	url = https://github.com/Automated-Medical-Assistant/microservice-frontend-status.git
+[submodule "microservice-service-status"]
+	path = microservice-service-status
+	url = https://github.com/Automated-Medical-Assistant/microservice-service-status.git
+[submodule "microservice-number-service"]
+	path = microservice-number-service
+	url = https://github.com/Automated-Medical-Assistant/microservice-number-service.git
+[submodule "microservice-doctor-service"]
+	path = microservice-doctor-service
+	url = https://github.com/Automated-Medical-Assistant/microservice-doctor-service.git
